@@ -1,0 +1,201 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "task",
+      "patterns": [
+        "What you do?",
+        "What do you do?",
+        "What is your task?",
+        "Who are you?",
+        "What can you do?",
+        "Which is your specialty?",
+        "Present yourself",
+        "What is your name?",
+        "What's your name?",
+        "Your name"
+      ],
+      "responses": [
+        "My name is PAA, and I can do a lot of things using my AI. I can recommend you movies based on a movie you like and by categories, and more, I can tell the best jokes in the world! Let's talk?"
+      ]
+    },
+    {
+      "tag": "favorite",
+      "patterns": [
+        "What your favorite movie?",
+        "What is your list of best movies?",
+        "Best movies",
+        "Favorite movies",
+        "Best movies of all time",
+        "Favorite",
+        "Top list"
+      ],
+      "responses": [
+        "My favorite movies of all time:1. 2001 A Space Odyssey (1968)  2. Donnie Darko (2001)  3. Taxi Driver (1976)  4. Mulholland Drive (2001) 5. A Clockwork Orange (1971)"
+      ]
+    },
+    {
+      "tag": "comedy",
+      "patterns": [
+        "Comedy movie",
+        "What your favorite comedy movie?",
+        "Best comedy movies",
+        "Favorite comedy movies",
+        "Recommend comedy movies",
+        "Comedy"
+      ],
+      "responses": [
+        "My favorite Comedy movies of all time:1. The Big Lebowski (1998)  2. Doctor Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)  3. Borat (2006)"
+      ]
+    },
+    {
+      "tag": "romance",
+      "patterns": [
+        "Romance movie",
+        "What your favorite romance movie?",
+        "Best romance movies",
+        "Favorite romance movies",
+        "Recommend romance movies",
+        "Romance"
+      ],
+      "responses": [
+        "My favorite Romance movies of all time:1. Eternal Sunshine of the Spotless Mind (2004)  2.  Annie Hall (1977)  3.  In the Mood for Love (2000)"
+      ]
+    },
+    {
+      "tag": "horror",
+      "patterns": [
+        "Horror movie",
+        "What your favorite horror movie?",
+        "Best horror movies",
+        "Favorite horror movies",
+        "Recommend horror movies",
+        "Horror"
+      ],
+      "responses": [
+        "My favorite Horror movies of all time:1. The Shining (1980)  2.  Carrie  (1976)  3.  The Thing (1982)"
+      ]
+    },
+    {
+      "tag": "action",
+      "patterns": [
+        "Action movie",
+        "What your favorite action movie?",
+        "Best action movies",
+        "Favorite action movies",
+        "Recommend action movies",
+        "Action"
+      ],
+      "responses": [
+        "My favorite Action movies of all time:1. The Matrix (1990)  2. Kill Bill (2003) 3. Léon: The Professional (1994)"
+      ]
+    },
+    {
+      "tag": "fantasy",
+      "patterns": [
+        "Fantasy movie",
+        "What your favorite fantasy movie?",
+        "Best fantasy movies",
+        "Favorite fantasy movies",
+        "Recommend fantasy movies",
+        "Fantasy"
+      ],
+      "responses": [
+        "My favorite Fantasy movies of all time:1. The Wizard of Oz (1939)  2. The Lord of the Rings: The Fellowship of the Ring (2001) 3. Spirited Away (2001)"
+      ]
+    },
+    {
+      "tag": "drama",
+      "patterns": [
+        "Drama movie",
+        "What your favorite drama movie?",
+        "Best drama movies",
+        "Favorite drama movies",
+        "Recommend drama movies",
+        "Drama"
+      ],
+      "responses": [
+        "My favorite Drama movies of all time:1. Pulp Fiction (1994)  2. Blue Velvet (1986) 3. Into the Wild (2007)"
+      ]
+    },
+    {
+      "tag": "mystery",
+      "patterns": [
+        "Mystery movie",
+        "What your favorite mystery movie?",
+        "Best mystery movies",
+        "Favorite mystery movies",
+        "Recommend mystery movies",
+        "Mystery"
+      ],
+      "responses": [
+        "My favorite Mystery movies of all time:1. The Usual Suspects (1995)  2. Memento (2001) 3. Rear Window (1954)"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "Joke",
+        "Make me laugh",
+        "Laugh"
+      ],
+      "responses": [
+        "Why did the Star Wars movies come out in the order 4 5 6 1 2 3?In charge of the sequence, Yoda was.",
+        "My wife asked me if I wanted to watch Dr. Strange for movie night, but I said no.I had Stranger Things to watch.",
+        "What do you call security guards working outside Samsung shops?Guardians of the Galaxy.",
+        "Two cannibals were eating a clown. One turns to the other and says:  'Does this taste funny to you?",
+        "Three tomatoes are walking down the street: a papa tomato, a mama tomato, and a little baby tomato. Baby tomato starts lagging behind. Papa tomato gets angry, goes over to the baby tomato, and squishes him...and says: 'Ketchup.",
+        "I watched a movie about Stockholm Syndrome.It captured me even though I didn't like it at first, but by the end I absolutely loved it."
+      ]
+    },
+    {
+      "tag": "recommendation",
+      "patterns": [
+        "Recommend me a movie?",
+        "Recommend me a film?",
+        "Movie recommendation",
+        "Film recommendation",
+        "Best movies",
+        "Best films",
+        "Movie",
+        "Film"
+      ],
+      "responses": [
+        "Do you want a movie recommendation? Type 'movie:' followed by the name of a movie you like, and I'll give you some recommendations."
+      ]
+    }
+  ]
+}
