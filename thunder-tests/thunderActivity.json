@@ -1,0 +1,16 @@
+[
+    {
+        "_id": "7e2698c8-4515-4dab-a11f-2d94a4a1d819",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:8000/api/chat/",
+        "url": "http://localhost:8000/api/chat/",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-06-29T14:06:48.562Z",
+        "modified": "2023-06-29T14:06:48.562Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    }
+]

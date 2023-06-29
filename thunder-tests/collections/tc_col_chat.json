@@ -1,0 +1,89 @@
+{
+    "_id": "e8b710aa-d1b0-4237-9bea-e4d884ce4f15",
+    "colName": "chat",
+    "created": "2023-06-29T14:07:14.597Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "bfb324e0-358e-4d45-8ad4-6f6b6fc7a3c9",
+            "colId": "e8b710aa-d1b0-4237-9bea-e4d884ce4f15",
+            "containerId": "",
+            "name": "get all chats",
+            "url": "http://localhost:8000/api/chat/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-29T14:07:25.403Z",
+            "modified": "2023-06-29T14:07:32.766Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "332ef265-262e-497c-999c-589b134c4357",
+            "colId": "e8b710aa-d1b0-4237-9bea-e4d884ce4f15",
+            "containerId": "",
+            "name": "get all messages from chat",
+            "url": "http://localhost:8000/api/chat/1/messages",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-29T14:07:46.349Z",
+            "modified": "2023-06-29T14:10:06.855Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0159515e-5a64-462b-bfea-5767dac56d9c",
+            "colId": "e8b710aa-d1b0-4237-9bea-e4d884ce4f15",
+            "containerId": "",
+            "name": "post new message",
+            "url": "http://localhost:8000/api/chat/1/messages",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-29T14:08:31.143Z",
+            "modified": "2023-06-29T14:09:10.980Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"content\": \"hello there\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "07ea6b44-7939-48df-83ab-923902817756",
+            "colId": "e8b710aa-d1b0-4237-9bea-e4d884ce4f15",
+            "containerId": "",
+            "name": "change chat title",
+            "url": "http://localhost:8000/api/chat/1",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-06-29T14:10:28.246Z",
+            "modified": "2023-06-29T14:11:19.072Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"this is a test\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7f3d26d6-1171-452d-a506-c28d2131a331",
+            "colId": "e8b710aa-d1b0-4237-9bea-e4d884ce4f15",
+            "containerId": "",
+            "name": "get specific chat",
+            "url": "http://localhost:8000/api/chat/2",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-06-29T14:13:10.563Z",
+            "modified": "2023-06-29T14:13:16.039Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
