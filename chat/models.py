@@ -33,7 +33,7 @@ class Message(models.Model):
     def create_message(chat, content):
         if content[:6].lower() == 'movie:':
             content = content[6:]
-            bot_response = {'answer': movie_rec(content[6:], similarity)}
+            bot_response = {'answer': movie_rec(content, similarity)}
         else:
             response = get_response(content)
             bot_response = {'answer': response}

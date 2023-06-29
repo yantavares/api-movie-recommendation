@@ -42,12 +42,12 @@
             "method": "POST",
             "sortNum": 30000,
             "created": "2023-06-29T14:08:31.143Z",
-            "modified": "2023-06-29T14:09:10.980Z",
+            "modified": "2023-06-29T14:45:36.671Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"content\": \"hello there\"\n}",
+                "raw": "{\n  \"content\": \"movie: iron man\"\n}",
                 "form": []
             },
             "tests": []
@@ -81,6 +81,20 @@
             "sortNum": 50000,
             "created": "2023-06-29T14:13:10.563Z",
             "modified": "2023-06-29T14:13:16.039Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "34045020-c099-4a6c-a1e2-074f199224ef",
+            "colId": "e8b710aa-d1b0-4237-9bea-e4d884ce4f15",
+            "containerId": "",
+            "name": "create new chat",
+            "url": "http://localhost:8000/api/chat/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-06-29T14:30:17.112Z",
+            "modified": "2023-06-29T14:30:26.034Z",
             "headers": [],
             "params": [],
             "tests": []
