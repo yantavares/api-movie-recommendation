@@ -6,7 +6,7 @@ from torch.utils.data import Dataset, DataLoader
 from .model import NeuralNet
 from .nltk_utils import tokenize, stem, bag_of_words
 
-intents_file_path = 'C:\\Users\\guilh\\Dev\\Back-end\\api-movie-recommendation\\chat\\intents.json'
+intents_file_path = 'chat/intents.json'
 
 
 with open(intents_file_path, 'r') as f:
@@ -41,6 +41,7 @@ for (pattern_sentece, tag) in xy:
 X_train = np.array(X_train)
 y_train = np.array(y_train)
 
+
 class ChatDataset(Dataset):
     def __init__(self):
         self.n_samples = len(X_train)
@@ -52,6 +53,7 @@ class ChatDataset(Dataset):
 
     def __len__(self):
         return self.n_samples
+
 
 batch_size = 8
 hidden_size = 8
@@ -95,7 +97,7 @@ data = {
     "tags": tags
 }
 
-FILE = 'C:\\Users\\guilh\\Dev\\Back-end\\api-movie-recommendation\\chat\\data.pth'
+FILE = 'chat/data.pth'
 torch.save(data, FILE)
 
 print(f'Training routine is complete. File saved to {FILE}')

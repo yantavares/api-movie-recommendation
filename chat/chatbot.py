@@ -5,13 +5,13 @@ from .model import NeuralNet
 from .nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-intents_file_path = 'C:\\Users\\guilh\\Dev\\Back-end\\api-movie-recommendation\\chat\\intents.json'
+intents_file_path = 'chat/intents.json'
 
 
 with open(intents_file_path, 'r') as f:
     intents = json.load(f)
 
-FILE = 'C:\\Users\\guilh\\Dev\\Back-end\\api-movie-recommendation\\chat\\data.pth'
+FILE = 'chat/data.pth'
 data = torch.load(FILE)
 
 input_size = data['input_size']
@@ -26,6 +26,7 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "PAA"
+
 
 def get_response(msg):
 

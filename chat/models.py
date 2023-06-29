@@ -4,18 +4,21 @@ import pandas as pd
 from .chatbot import get_response
 from .movie_rec_routine import movie_rec
 
-similarity = pd.read_parquet('C:\\Users\\guilh\\Dev\\Back-end\\api-movie-recommendation\\chat\\similarity', engine='pyarrow')
+similarity = pd.read_parquet('chat/similarity', engine='pyarrow')
 similarity = np.array(similarity)
 
+
 class Chat(models.Model):
-    title = models.CharField(max_length=255, default="New recommendation about...")
+    title = models.CharField(
+        max_length=255, default="New recommendation about...")
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title
-    
+
     def has_messages(self):
         return self.message_set.exists()
+
 
 class Message(models.Model):
     chat = models.ForeignKey(Chat, on_delete=models.CASCADE)
@@ -35,6 +38,7 @@ class Message(models.Model):
             response = get_response(content)
             bot_response = {'answer': response}
 
-        message = Message(chat=chat, content=content, bot_response=bot_response['answer'])
+        message = Message(chat=chat, content=content,
+                          bot_response=bot_response['answer'])
         message.save()
         return message
