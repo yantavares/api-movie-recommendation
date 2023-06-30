@@ -42,12 +42,12 @@
             "method": "POST",
             "sortNum": 30000,
             "created": "2023-06-29T14:08:31.143Z",
-            "modified": "2023-06-29T14:45:36.671Z",
+            "modified": "2023-06-30T17:57:52.009Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"content\": \"movie: iron man\"\n}",
+                "raw": "{\n  \"content\": \"movie: bird man\"\n}",
                 "form": []
             },
             "tests": []
@@ -61,12 +61,12 @@
             "method": "PATCH",
             "sortNum": 40000,
             "created": "2023-06-29T14:10:28.246Z",
-            "modified": "2023-06-29T14:11:19.072Z",
+            "modified": "2023-06-29T16:35:31.957Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"title\": \"this is a test\"\n}",
+                "raw": "{\n  \"title\": \"this is a test man\"\n}",
                 "form": []
             },
             "tests": []
@@ -76,11 +76,11 @@
             "colId": "e8b710aa-d1b0-4237-9bea-e4d884ce4f15",
             "containerId": "",
             "name": "get specific chat",
-            "url": "http://localhost:8000/api/chat/2",
+            "url": "http://localhost:8000/api/chat/1",
             "method": "GET",
             "sortNum": 50000,
             "created": "2023-06-29T14:13:10.563Z",
-            "modified": "2023-06-29T14:13:16.039Z",
+            "modified": "2023-06-30T17:17:51.108Z",
             "headers": [],
             "params": [],
             "tests": []
