@@ -5,15 +5,19 @@ from .models import Chat, Message
 from django.views.decorators.csrf import csrf_exempt
 
 
-
-@api_view(['GET', 'POST'])
+@api_view(['GET', 'POST', 'DELETE'])
 @csrf_exempt
 def chats(request):
+
+    if request.method == 'DELETE':
+        Chat.objects.all().delete()
+        return Response({"msg": "All chats were deleted!"}, status=204)
+
     if request.method == 'GET':
         chats = Chat.objects.all()
         serializer = ChatSerializer(chats, many=True)
         return Response(serializer.data)
-    
+
     if request.method == 'POST':
         last_chat = Chat.objects.order_by('-created_at').first()
 
@@ -26,6 +30,7 @@ def chats(request):
         else:
             serializer = ChatSerializer(last_chat)
             return Response(serializer.data, status=200)
+
 
 @api_view(['GET', 'PATCH', 'DELETE'])
 @csrf_exempt
@@ -58,12 +63,12 @@ def messages(request, id):
         chat = Chat.objects.get(pk=id)
     except Chat.DoesNotExist:
         return Response(status=404)
-    
+
     if request.method == 'GET':
         messages = Message.objects.filter(chat=chat)
         serializer = MessageSerializer(messages, many=True)
         return Response(serializer.data)
-    
+
     if request.method == 'POST':
         serializer = CreateMessageSerializer(data=request.data)
         if serializer.is_valid():

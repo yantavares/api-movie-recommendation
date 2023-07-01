@@ -98,6 +98,20 @@
             "headers": [],
             "params": [],
             "tests": []
+        },
+        {
+            "_id": "b0a8cc39-69cb-4513-b1a2-2ea5d6e34e43",
+            "colId": "e8b710aa-d1b0-4237-9bea-e4d884ce4f15",
+            "containerId": "",
+            "name": "delete all chats",
+            "url": "http://localhost:8000/api/chat/",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-07-01T22:44:09.174Z",
+            "modified": "2023-07-01T22:44:23.544Z",
+            "headers": [],
+            "params": [],
+            "tests": []
         }
     ]
 }
