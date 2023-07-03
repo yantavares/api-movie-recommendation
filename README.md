@@ -103,7 +103,6 @@ In case of an error, the API will respond with an appropriate status code and an
 Example Error Response:
 
 ```json
-Copy code
 {
   "error": "Invalid API token"
 }
