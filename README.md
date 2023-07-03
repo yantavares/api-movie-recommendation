@@ -4,7 +4,7 @@ The Movie Recommendation API is a RESTful API that provides movie recommendation
 
 ## Base URL
 
-https://example.com/api/...
+https://example.com/api/
 
 
 ## Authentication
