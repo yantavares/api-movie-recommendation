@@ -4,7 +4,7 @@ The Movie Recommendation API is a RESTful API that provides movie recommendation
 
 ## Base URL
 
-https://example.com/api/v1
+https://example.com/api/...
 
 
 ## Authentication
@@ -18,50 +18,22 @@ Authorization: Bearer YOUR_API_TOKEN
 
 ## Endpoints
 
-### 1. Get Movie Recommendations
+### 1. Get All Chats
 
 Returns a list of movie recommendations based on user preferences.
 
-**Endpoint:** `/recommendations`
+**Endpoint:** `/chat/`
 
 **Method:** GET
 
-**Parameters:**
-- `user_id` (required): The unique identifier of the user.
-- `genre` (optional): The preferred genre of the movies.
-- `actor` (optional): The preferred actor in the movies.
-- `director` (optional): The preferred director of the movies.
-- `limit` (optional): The maximum number of recommendations to return (default: 10).
-
 **Example Request:**
 
-GET /api/v1/recommendations?user_id=12345&genre=action&limit=5
+GET /api/chat/
 
 
 **Example Response:**
 ```json
-{
-  "user_id": 12345,
-  "recommendations": [
-    {
-      "movie_id": 1,
-      "title": "The Avengers",
-      "genre": "Action",
-      "director": "Joss Whedon",
-      "actors": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"],
-      "rating": 8.1
-    },
-    {
-      "movie_id": 2,
-      "title": "Die Hard",
-      "genre": "Action",
-      "director": "John McTiernan",
-      "actors": ["Bruce Willis", "Alan Rickman"],
-      "rating": 8.2
-    },
-    ...
-  ]
-}
+
 ```
 
 ### 2. Get Movie Details
