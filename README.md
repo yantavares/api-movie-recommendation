@@ -1,5 +1,7 @@
 # Movie Chatbot API Documentation
 
+Disclaimer: This is a fork from the original project maintained by me, [GuilhermeGonSoares](https://github.com/GuilhermeGonSoares) and [Mathweuzz](https://github.com/Mathweuzz).
+
 The Chat API, powered by an advanced AI, enables the creation, retrieval, updating, and deletion of chat sessions and messages about movies within an application. This AI-driven approach enhances the interaction capabilities of the API, offering more dynamic and intelligent responses based on user inputs and contexts. Detailed documentation about the AI, including its architecture, training methods, and capabilities, can be found at the [Movie-chatbot-AI GitHub repository](https://github.com/Mathweuzz/Movie-chatbot-AI).
 
 ## Base URL
