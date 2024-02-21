@@ -1,6 +1,6 @@
 # Movie Chatbot API Documentation
 
-The Chatbot API enables the creation, retrieval, updating, and deletion of chatbot sessions and messages within an application.
+The Chat API, powered by an advanced AI, enables the creation, retrieval, updating, and deletion of chat sessions and messages about movies within an application. This AI-driven approach enhances the interaction capabilities of the API, offering more dynamic and intelligent responses based on user inputs and contexts. Detailed documentation about the AI, including its architecture, training methods, and capabilities, can be found at the [Movie-chatbot-AI GitHub repository](https://github.com/Mathweuzz/Movie-chatbot-AI).
 
 ## Base URL
 
@@ -27,9 +27,8 @@ The Chatbot API enables the creation, retrieval, updating, and deletion of chatb
 
 - **Method:** POST
 - **URL:** `/chat/`
-- **Request Body:**
-  - None required for creation; optionally, specify initial parameters or participants.
-- **Response:** Returns details of the newly created chat session.
+- **Request Body:** Optionally specify initial parameters or participants.
+- **Response:** Returns details of the newly created chat session, facilitated by AI.
 
 ### Get All Chats
 
@@ -42,14 +41,14 @@ The Chatbot API enables the creation, retrieval, updating, and deletion of chatb
 - **Method:** GET
 - **URL:** `/chat/{chat_id}`
 - **URL Parameters:** `chat_id` is the unique identifier of the chat.
-- **Response:** Returns details of the specified chat session.
+- **Response:** Returns details of the specified chat session, with AI-enhanced insights.
 
 ### Change Chat Title
 
 - **Method:** PATCH
 - **URL:** `/chat/{chat_id}`
 - **URL Parameters:** `chat_id` is the unique identifier of the chat.
-- **Request Body:**
+- **Request Body:** 
   ```json
   {
     "title": "New Chat Title"
@@ -68,24 +67,24 @@ The Chatbot API enables the creation, retrieval, updating, and deletion of chatb
 - **Method:** GET
 - **URL:** `/chat/{chat_id}/messages`
 - **URL Parameters:** `chat_id` is the unique identifier of the chat.
-- **Response:** Returns an array of messages from the specified chat session.
+- **Response:** Returns an array of messages from the specified chat session, enriched by AI.
 
 ### Post New Message
 
 - **Method:** POST
 - **URL:** `/chat/{chat_id}/messages`
 - **URL Parameters:** `chat_id` is the unique identifier of the chat.
-- **Request Body:**
+- **Request Body:** 
   ```json
   {
     "content": "Your message content here"
   }
   ```
-- **Response:** Returns details of the newly created message and the answer from the AI.
+- **Response:** Returns details of the newly created message, processed through AI for contextual understanding.
 
 ## Authentication
 
-All requests to the Chat API require authentication. Ensure to include an `Authorization` header with a valid API token in each request.
+All requests to the Chat API require authentication. Include an `Authorization` header with a valid API token in each request.
 
 **Example Header:**
 
@@ -95,5 +94,4 @@ Authorization: Bearer YOUR_API_TOKEN
 
 ## Error Handling
 
-The API uses standard HTTP response codes to indicate the success or failure of requests. In the case of errors, a JSON response will be returned with details about the error.
-
+The API uses standard HTTP response codes for success or failure notifications. Errors return a JSON response with error details.
